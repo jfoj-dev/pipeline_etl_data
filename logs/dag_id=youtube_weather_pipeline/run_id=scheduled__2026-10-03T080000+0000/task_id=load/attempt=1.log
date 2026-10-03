@@ -1,0 +1,15 @@
+{"timestamp":"2026-10-03T08:00:05.481818Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-03T08:00:05.484038Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-03T08:00:05.556358Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-10-03T08:00:05.556596Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-10-03T08:00:05.582398Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-10-03T08:00:05.582969Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-10-03T08:00:05.583456Z","level":"info","event":"Current task name:load","logger":"task.stdout"}
+{"timestamp":"2026-10-03T08:00:05.583914Z","level":"info","event":"Dag name:youtube_weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-10-03T08:00:05.643419Z","level":"info","event":"→ Conectando em host.docker.internal:5432/youtube_weather_data","logger":"root","filename":"load_data.py","lineno":24}
+{"timestamp":"2026-10-03T08:00:05.807448Z","level":"info","event":"✅ Dados carregados com sucesso!","logger":"root","filename":"load_data.py","lineno":39}
+{"timestamp":"2026-10-03T08:00:05.812302Z","level":"info","event":"Total de registros na tabela: 4","logger":"root","filename":"load_data.py","lineno":43}
+{"timestamp":"2026-10-03T08:00:05.813691Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-10-03T08:00:05.835347Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-10-03T08:00:05.835811Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-10-03T08:00:05.836401Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): load>","logger":"task.stdout"}

@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -46.6361,
+        "lat": -23.5475
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 15.91,
+        "feels_like": 15.83,
+        "temp_min": 15.2,
+        "temp_max": 16.41,
+        "pressure": 1019,
+        "humidity": 87,
+        "sea_level": 1019,
+        "grnd_level": 927
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.02,
+        "deg": 80,
+        "gust": 4.02
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1791015113,
+    "sys": {
+        "type": 2,
+        "id": 2082654,
+        "country": "BR",
+        "sunrise": 1791017095,
+        "sunset": 1791061564
+    },
+    "timezone": -10800,
+    "id": 3448439,
+    "name": "S\u00e3o Paulo",
+    "cod": 200
+}

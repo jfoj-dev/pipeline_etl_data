@@ -1,0 +1,24 @@
+{"timestamp":"2026-10-03T07:19:05.484092Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-03T07:19:05.486085Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-03T07:19:05.557516Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-10-03T07:19:05.557908Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-10-03T07:19:05.583662Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.584209Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.584550Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.584865Z","level":"info","event":"Dag name:youtube_weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.586126Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.586455Z","level":"info","event":" Iniciando transformações","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.586345Z","level":"info","event":"→ Criando DataFrame do arquivo JSON...","logger":"root","filename":"transform_data.py","lineno":42}
+{"timestamp":"2026-10-03T07:19:05.592282Z","level":"info","event":"\n✓ DataFrame criado com 1 linha(s)","logger":"root","filename":"transform_data.py","lineno":52}
+{"timestamp":"2026-10-03T07:19:05.597656Z","level":"info","event":"\n✓ Coluna 'weather' normalizada - 31 colunas","logger":"root","filename":"transform_data.py","lineno":66}
+{"timestamp":"2026-10-03T07:19:05.597959Z","level":"info","event":"\n→ Removendo colunas: ['weather', 'weather_icon', 'sys.type']","logger":"root","filename":"transform_data.py","lineno":70}
+{"timestamp":"2026-10-03T07:19:05.599290Z","level":"info","event":"✓ Colunas removidas - 28 colunas restantes","logger":"root","filename":"transform_data.py","lineno":72}
+{"timestamp":"2026-10-03T07:19:05.599510Z","level":"info","event":"\n→ Renomeando 26 colunas...","logger":"root","filename":"transform_data.py","lineno":76}
+{"timestamp":"2026-10-03T07:19:05.600307Z","level":"info","event":"✓ Colunas renomeadas","logger":"root","filename":"transform_data.py","lineno":78}
+{"timestamp":"2026-10-03T07:19:05.600518Z","level":"info","event":"\n→ Convertendo colunas para datetime: ['datetime', 'sunrise', 'sunset']","logger":"root","filename":"transform_data.py","lineno":82}
+{"timestamp":"2026-10-03T07:19:05.605621Z","level":"info","event":"✓ Colunas convertidas para datetime\n","logger":"root","filename":"transform_data.py","lineno":85}
+{"timestamp":"2026-10-03T07:19:05.605838Z","level":"info","event":"✓ Transformações concluídas\n","logger":"root","filename":"transform_data.py","lineno":95}
+{"timestamp":"2026-10-03T07:19:05.661379Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-10-03T07:19:05.683298Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.683725Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-10-03T07:19:05.684155Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","logger":"task.stdout"}
